@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'Montserrat Alternates Bold';
+    src: local('Montserrat Alternates Bold'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates SemiBold';
+    src: local('Montserrat Alternates SemiBold'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates Medium';
+    src: local('Montserrat Alternates Medium'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates Light' ;
+    src: local('Montserrat Alternates Light'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Light.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    background: #FAFAFA;
+    padding: 0px 0;
+    height: 180px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    
+    margin-top: 82px;
+    margin-left: 200px;
+}
+
+nav a{
+    color: black;
+    font-family: 'Montserrat Alternates SemiBold';
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-family: 'Montserrat Alternates SemiBold';
+}
+
+figcaption b{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 20px;
+    color: rgb(1, 88, 30);
+    margin-top: 120px;
+    margin-left: 25px;
+}
+
+.general{
+    background-image: url(images/cows.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 685px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.white img{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 95px;
+}
+
+.general p{
+    font-family:'Montserrat Alternates Bold';
+    font-size: 20px;
+    text-align: center;
+}
+
+.generaltext{
+    margin-top: 250px;
+    margin-left: 270px;
+    z-index: 2;
+    position: absolute;
+}
+
+.agrobisness{
+    background-color: #FAFAFA;
+    height: 850px;
+    float: inherit;
+}
+
+.agrobisnesstext1{
+    font-family:'Montserrat Alternates Bold' ;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 42px;
+    margin-left: 190px;
+    position: absolute;
+}
+
+.agrobisnesstext2{
+    font-family:'Montserrat Alternates Bold' ;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 287px;
+    margin-left: 395px;
+    position: absolute;
+}
+
+.sheeps{
+    overflow: hidden;
+}
+
+.sheeps img{
+    width: 1008px;
+    height: 403px;
+    position: absolute;
+    margin-top: 425px;
+    margin-left: 136px;
+    transition: 1s;
+}
+
+.sheeps img:hover{
+    transform: scale(1.2);
+}
+
+.round{
+    border-radius: 30px;
+}
+
+.hot{
+    background-color: #FAFAFA;
+    height: 832px;
+    float: inherit;
+}
+
+.build img{
+    width: 400px;
+    height: 535px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 157px;
+}
+
+.hottext1{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 36px;
+    position: absolute;
+    margin-top: 126px;
+    margin-left: 564px;
+}
+
+.hottext2{
+    font-family: 'Montserrat Alternates Medium';
+    font-size: 20px;
+    position: absolute;
+    margin-top: 323px;
+    margin-left: 564px;
+}
+
+.spisok{
+    font-family: 'Montserrat Alternates Medium';
+    font-size: 20px;
+    position: absolute;
+    margin-top: 425px;
+    margin-left: 564px;
+}
+
+.spisok li{
+    padding-top: 40px;
+}
+
+.line{
+    overflow: hidden;
+}
+
+.line img{
+    width: 10px;
+    height: 341px;
+    position: absolute;
+    margin-top: 346px;
+    margin-left: 507px;
+    transition: 1s;
+    display: block;
+}
+
+.hot:hover .line img{
+    transform: scale(1.2);
+}
+
+.themes{
+    background-color: #FAFAFA;
+    height: 832px;
+    float: inherit;
+}
+
+.themestext1{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 48px;
+    margin-top: 48px;
+    margin-left: 32px;
+    position: absolute;
+    width: 100%;
+}
+
+.themestext2{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 164px;
+    width: 100%;
+    text-align: left;
+}
+
+.themestext3{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 256px;
+    width: 100%;
+    text-align: left;
+}
+
+.themestext4{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 348px;
+    width: 100%;
+    text-align: left;
+}
+
+.themestext5{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 488px;
+    width: 100%;
+    text-align: left;
+}
+
+.themestext6{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 580px;
+    width: 100%;
+    text-align: left;
+}
+
+.themestext7{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 672px;
+    width: 100%;
+    text-align: left;
+}
+
+.video{
+    background-color: #FAFAFA;
+    height: 850px;
+    float: inherit;
+}
+
+iframe{
+    margin-top: 137px;
+    margin-left: 128px;
+}

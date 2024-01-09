@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'Montserrat Alternates Bold';
+    src: local('Montserrat Alternates Bold'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates SemiBold';
+    src: local('Montserrat Alternates SemiBold'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates Medium';
+    src: local('Montserrat Alternates Medium'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates Light' ;
+    src: local('Montserrat Alternates Light'),
+        url(fonts/ofont.ru_Montserrat\ Alternates\ Light.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    background: #FAFAFA;
+    padding: 0px 0;
+    height: 165px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    
+    margin-top: 82px;
+    margin-left: 200px;
+}
+
+nav a{
+    color: black;
+    font-family: 'Montserrat Alternates SemiBold';
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-family: 'Montserrat Alternates SemiBold';
+}
+
+figcaption b{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 20px;
+    color: rgb(1, 88, 30);
+    margin-top: 120px;
+    margin-left: 25px;
+}
+
+.main{
+    height: 470px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.maintext{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 40px;
+    color: rgb(1, 88, 30);
+    margin-top: 113px;
+    margin-left: 30px;
+}
+
+.maintext2{
+    font-family: 'Montserrat Alternates SemiBold';
+    font-size: 30px;
+    color: black;
+    margin-left: 30px;
+}
+
+.main img{
+    width: 750px;
+    height: 431px;
+    margin-left: 0px;
+    margin-top: 0px;
+    opacity: 0;
+    transition: 2s;
+    margin-top: 10%;
+}
+
+.main:hover img{
+    opacity: 1;
+    margin-top: 0%;
+}
+
+.stend{
+    background-color: #FAFAFA;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stendtext1{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 48px;
+    margin-top: 42px;
+    margin-right: 238px;
+    color: rgb(1, 88, 30);
+}
+
+.stendtext2{
+    font-family:'Montserrat Alternates SemiBold' ;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 42px;
+    margin-left: 215px;
+
+}
+
+.stendtext3{
+    font-family:'Montserrat Alternates SemiBold' ;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 42px;
+    margin-left: 215px;
+}
+
+.stendbutton img{
+    width: 442px;
+    height: 176px;
+    margin-left: 419px;
+    margin-top: 74px;
+    opacity: 1;
+    transition: 2s;
+    margin-top: 5%;
+}
+
+.stendbutton:hover img{
+    opacity: 1;
+    margin-top: 0%;
+}
+
+
+.popup{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.popup.active{
+    display: block;
+    
+}
+
+.popupcontainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.popupbody{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(1, 88, 30);
+    border-radius: 30px;
+    text-align: center;
+    padding: 100pz 15px 110px 15px;
+    position: relative;
+}
+
+.popupbody p{
+    font-family:'Montserrat Alternates SemiBold';
+    font-size: 24px;
+    color: white;
+    margin-top: 50px;
+}
+
+.popupbody input{
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 20px;
+    font-family:'Montserrat Alternates Medium';
+}
+
+.popupbody button{
+    cursor: pointer;
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 30px auto 0px auto;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-family:'Montserrat Alternates SemiBold';
+}
+
+.popupclose{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
+.place{
+    background-image: url(images/background_place.JPEG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 850px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.placetext1{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 170px;
+}
+
+.placetext2{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.placetext3{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.photos{
+    height: 850px;
+    width: 100%;
+    background-color: #FAFAFA;
+    float: inline-start;
+}
+
+.photostext{
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 32px;
+    color: rgb(1, 88, 30);
+    margin-left: 73px;
+    margin-top: 62px;
+    
+}
+
+.round{
+    border-radius: 30px;
+}
+
+.photo2{
+    width: 252px;
+    height: 288px;
+    margin-left: 71px;
+    margin-left: 71px;
+    z-index: 1;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo2:hover{
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+.photo4{
+    width: 432px;
+    height: 288px;
+    margin-top: -450px;
+    margin-left: 776px;
+    z-index: 1;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo4:hover{
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+.photo5{
+    width: 432px;
+    height: 288px;
+    margin-top: 195px;
+    margin-left: 71px;
+    z-index: 1;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo5:hover{
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+.photo3{
+    width: 252px;
+    height: 288px;
+    margin-top: -465px;
+    margin-left: 956px;
+    z-index: 1;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo3:hover{
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+.photo1{
+    width: 673px;
+    height: 180px;
+    margin-left: 550px;
+    margin-top: 0px;
+    z-index: 1;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo1:hover{
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+.photo6{
+    width: 622px;
+    height: 345px;
+    margin-left: 320px;
+    margin-top: -520px;
+    z-index: 2;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.photo6:hover{
+    filter: grayscale(0);
+    z-index: 2;
+}
+
+.contacts{
+    background-color: #FAFAFA;
+    height: 685px;
+    width: 100%;
+    float: inline-start;
+    
+}
+
+.contactsimg img{
+    width: 100%;
+}
+
+.map{
+    margin-left: 56px;
+    margin-top: 70px;
+    width: min-content;
+}
+
+.adress{
+    width: min-content;
+}
+
+.adress img{
+    width: 24px;
+    height: 24px;
+    margin-left: 640px;
+    margin-top: -400px;
+    position: absolute;
+}
+
+.adresstext{
+    font-family:'Montserrat Alternates Medium' ;
+    font-size: 16px;
+    margin-top: -417px;
+    margin-left: 687px;
+    position: absolute;
+}
+
+.call img{
+    width: 24px;
+    height: 24px;
+    margin-left: 640px;
+    margin-top: -250px;
+    position: absolute;
+}
+
+.calltext{
+    font-family:'Montserrat Alternates Medium' ;
+    font-size: 20px;
+    margin-top: -270px;
+    margin-left: 687px;
+    position: absolute;
+}
+
+.mail img{
+    width: 24px;
+    height: 24px;
+    margin-left: 640px;
+    margin-top: -150px;
+    position: absolute;
+}
+
+.mailtext{
+    font-family:'Montserrat Alternates Medium' ;
+    font-size: 20px;
+    margin-top: -172px;
+    margin-left: 687px;
+    position: absolute;
+}
+
+.vk img{
+    width: 63px;
+    height: 61px;
+    margin-left: 640px;
+    margin-top: -60px;
+    position: absolute;
+}

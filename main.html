@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>AGROCAUCUS</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="container menu">
+            <ul>
+                <a href="main.html"><figure><img src="images/logo.png" alt="лого" style="margin-left: 62px; margin-top: 19px; width: 104px; height: 103px;"><figcaption><b>АГРО<span style="color: black;">КАВКАЗ '24</span></b></figcaption></figure></a>
+                <li><a href="about us.html">О НАС</a></li>
+                <li><a href="members.html">УЧАСТНИКИ</a></li>
+                <li><a href="party.html">ВЕЧЕРИНКА</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="container maintext">
+            <p>МИР АГРОТЕХНОЛОГИЙ<br>
+                НА СЕВЕРНОМ КАВКАЗЕ</p>
+        </div>
+        <div class="container maintext2">
+            <p>3 дня погружения</p>
+        </div>
+        
+            <img src="images/main_gora.PNG" alt="гора">
+        
+    </div>
+    <div class="stend">
+        <div class="container stendtext1">
+            <p>ПРОЕКТ ДЛЯ АГРАРИЕВ СКФО</p>
+        </div>
+        <div class="container stendtext2">
+            <p>ПЛОЩАДКА, ГДЕ КОМПАНИИ ЕЖЕГОДНО НАХОДЯТ<br>
+                КЛИЕНТОВ ИЛИ ПАРТНЕРОВ, ИЗУЧАЮТ РЫНОК И<br>
+                ЗАКЛЮЧАЮТ ДОЛГОСРОЧНЫЕ КОНТРАКТЫ.</p>
+        </div>
+        <div class="container stendtext3">
+            <p>ПРЕЗЕНТУЙТЕ ПРОДУКТ ГОСТЯМ <span style="color: rgb(1, 88, 30);">ИЗ 10 АГРАРНЫХ</span><br>
+            РЕГИОНОВ РОСИИ</p>
+        </div>
+        <div class="stendbutton">
+            <a href="#" id="openpopup"><img src="images/stend_button.PNG" alt="кнопка"></a>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popupcontainer">
+                <div class="popupbody" id="popupbody">
+                    <p>ОСТАВЬТЕ ЗАЯВКУ НА БРОНЬ</p>
+                    <form onsubmit="myFunction()">
+                        <input type="text" placeholder="Фамилия и имя">
+                        <input type="text" placeholder="Телефон">
+                        <input type="text" placeholder="Почта">
+                        <button>ЗАБРОНИРОВАТЬ СТЕНД</button>
+                    </form>
+                    <div class="popupclose" id="popupclose">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const openpopup = document.getElementById('openpopup');
+            const closepopup = document.getElementById('popupclose');
+            const popup = document.getElementById('popup');
+
+            openpopup.addEventListener('click', function(e){
+                e.preventDefault();
+                popup.classList.add('active');
+            })
+
+            closepopup.addEventListener('click',()=>{
+                popup.classList.remove('active')
+            })
+            myFunction = function(e) {
+                e.preventDefault();
+            }
+        </script>
+    </div>
+    <div class="place">
+        <div class="container placetext1">
+            <p>31 января - 2 февраля<br>
+                МВЦ «Минводы ЭКСПО»</p>
+        </div>
+        <div class="container placetext2">
+            <p>МЕЖДУНАРОДНАЯ ВЫСТАВКА</p>
+        </div>
+        <div class="container placetext3">
+            <p>АГРОКАВКАЗ '24</p>
+        </div>
+    </div>
+    <div class="photos">
+        <div class="container photostext">
+            <p>ДЕЛАЕМ ВЫСТАВКИ, КОТОРЫЕ<br>
+                РЕШАЮТ ЗАДАЧИ ДЛЯ БИЗНЕСА И<br>
+                РАЗВЛЕКАЮТ</p>
+        </div>
+        <div class="photo2">
+            <img src="images/photo2.jpg" alt="фото" class="round">
+        </div>
+        <div class="photo4">
+            <img src="images/photo4.jpg" alt="фото" class="round">
+        </div>
+        <div class="photo5">
+            <img src="images/photo5.jpg" alt="фото" class="round">
+        </div>
+        <div class="photo3">
+            <img src="images/photo3.jpg" alt="фото" class="round">
+        </div>
+        <div class="photo1">
+            <img src="images/photo1.jpg" alt="фото" class="round">
+        </div>
+        <div class="photo6">
+            <img src="images/photo6.jpg" alt="фото" class="round">
+        </div>
+    </div>
+    
+    <div class="contacts">
+        <div class="container contactsimg"><img src="images/contacts.png" alt="контакты"></div>
+        <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc3c458262516ae6cea5cc0fd522896e2f067cb362fad107a82e729c380a59ac&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+        <div class="adress">
+            <img src="images/map (2).png" alt="место">
+        </div>
+        <div class="adresstext">
+            <p>РОССИЯ, СТАВРОПОЛЬСКИЙ КРАЙ,<br>
+                МИНЕРАЛОВОДСКИЙ ГОРОДСКОЙ ОКРУГ, ХУТОР<br>
+                КРАСНЫЙ ПАХАРЬ, УЛ. АВТОМОБИЛЬНАЯ, 31</p>
+        </div>
+        <div class="call">
+            <img src="images/call.png" alt="вызов">
+        </div>
+        <div class="calltext">
+            <p>+7 (8652) 666 - 254</p>
+        </div>
+        <div class="mail">
+            <img src="images/mail.png" alt="почта">
+        </div>
+        <div class="mailtext">
+            <p>kavkazexpo@gmail.com</p>
+        </div>
+        <div class="vk">
+            <a href="https://vk.com/club214767411"><img src="images/vk.PNG" alt="вк"></a>
+        </div>
+    </div>
+</body>
+</html>
