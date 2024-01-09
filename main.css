@@ -454,3 +454,12 @@ figcaption b{
     margin-top: -60px;
     position: absolute;
 }
+
+.lifesite{
+    font-family:'Montserrat Alternates Bold';
+    font-size: 24px;
+    color: rgb(1, 88, 30);
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+}
