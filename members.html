@@ -63,9 +63,17 @@
     </div>
     <div class="brands">
         <div class="brandstext">
-            <p>ВЫСТАВКА СОБРАЛА ДЛЯ ВАС 8000 <br>
-            ОБРАЗЦОВ БРЕНДОВ СО ВСЕГО<br>
-            МИРА.</p>
+            <body onload = 'animateText("dynamic-text", "ВЫСТАВКА СОБРАЛА ДЛЯ ВАС 8000 ОБРАЗЦОВ БРЕНДОВ СО ВСЕГО МИРА", 0);'>
+            <span id = 'dynamic-text'></span>
+        </body>
+        <script type="text/javascript">
+            function animateText(id, text, i) {
+              document.getElementById(id).innerHTML = text.substring(0, i);
+              i++;
+              if (i > text.length) i = 0;
+              setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 100);
+            }
+        </script>
         </div>
     </div>
     <div class="animals">

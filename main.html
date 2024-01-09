@@ -6,8 +6,20 @@
     <link rel="stylesheet" href="main.css">
     <title>AGROCAUCUS</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <script>
+    function lifeSite() {
+    var start = new Date('December 20, 2023'); // Дата создания сайта
+    var end = new Date();
+    var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    var suffix = new Array("день", "дня", "дней");
+    var keys = [2, 0, 1, 1, 1, 2];
+    var mod = life % 100;
+    var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];
+    document.getElementById("lifesite").innerHTML = life + " " + suffix[suffix_key];
+    }
+    </script>
 </head>
-<body>
+<body onload="lifeSite()">
     <header>
         <nav class="container menu">
             <ul>
@@ -141,6 +153,9 @@
         </div>
         <div class="vk">
             <a href="https://vk.com/club214767411"><img src="images/vk.PNG" alt="вк"></a>
+        </div>
+        <div class="lifesite">
+            <p>Этот сайт существует уже: <span id="lifesite"></span></p>
         </div>
     </div>
 </body>
